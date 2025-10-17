@@ -161,18 +161,6 @@ function App() {
                 placeholder="Choose a country"
               />
 
-              {/* Language Selector - Only show if multiple languages */}
-              {selectedCountry && languages.length > 1 && (
-                <div className="relative">
-                  <SearchableDropdown
-                    options={languages}
-                    value={selectedLanguage}
-                    onChange={handleLanguageSelect}
-                    placeholder="Choose a language"
-                  />
-                </div>
-              )}
-
               {/* Missing data warning */}
               {selectedCountry && !fromC && (
                 <div className="p-3 sm:p-4 bg-yellow-50 border border-yellow-200 rounded-widget text-sm text-yellow-800">
@@ -195,29 +183,13 @@ function App() {
                   )}
                   <span className="text-text">og ég tala</span>
                   
-                  {/* Language display with dropdown if multiple options */}
-                  {languages.length > 1 ? (
-                    <div className="relative inline-block">
-                      <button
-                        onClick={() => {
-                          // Find and click the hidden language dropdown
-                          const languageDropdown = document.querySelector('[aria-label="language-selector"]');
-                          if (languageDropdown) {
-                            languageDropdown.click();
-                          }
-                        }}
-                        className="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-result-bg text-result-text hover:bg-opacity-90 transition-colors"
-                      >
-                        <span>{selectedLanguage || languages[0]}</span>
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                        </svg>
-                      </button>
-                    </div>
-                  ) : (selectedLanguage || (languages.length === 1 && languages[0])) ? (
-                    <span className="inline-block px-3 py-1 rounded-lg bg-result-bg text-result-text">
-                      {selectedLanguage || languages[0]}
-                    </span>
+                  {/* Language display with inline dropdown if multiple options */}
+                  {languages.length > 0 ? (
+                    <InlineLanguageSelector
+                      languages={languages}
+                      selectedLanguage={selectedLanguage}
+                      onChange={handleLanguageSelect}
+                    />
                   ) : (
                     <span className="inline-block px-3 py-1 rounded-lg border-2 border-dashed border-result-bg text-result-bg">
                       ___
