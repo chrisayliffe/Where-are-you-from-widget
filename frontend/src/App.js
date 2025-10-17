@@ -138,10 +138,10 @@ function App() {
             <Globe className="h-7 w-7 sm:h-8 sm:w-8 text-accent" />
           </div>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-text mb-2">
-            Language Selector
+            Hvaðan ertu?
           </h1>
           <p className="text-gray-600 text-sm sm:text-base px-4">
-            Choose your country and language to create your introduction
+            Choose your country to learn it's name in Icelandic (you'll get asked this a lot). You'll get your language as a bonus!
           </p>
         </div>
 
@@ -153,9 +153,8 @@ function App() {
 
           {!loading && !error && (
             <>
-              {/* Country Selector */}
+              {/* Country Selector - No label */}
               <SearchableDropdown
-                label="Select your country"
                 options={countries}
                 value={selectedCountry}
                 onChange={handleCountrySelect}
@@ -180,14 +179,31 @@ function App() {
                 </div>
               )}
 
-              {/* Result Card */}
-              {fromC && (
-                <ResultCard
-                  sentence={getSentence()}
-                  fromC={fromC}
-                  selectedLanguage={selectedLanguage}
-                />
-              )}
+              {/* Always visible sentence with inline green boxes */}
+              <div className="p-4 sm:p-6 rounded-lg bg-white border border-gray-200">
+                <div className="flex flex-wrap items-center gap-2 text-xl sm:text-2xl font-medium leading-relaxed">
+                  <span className="text-text">Ég er frá</span>
+                  {fromC ? (
+                    <span className="inline-block px-3 py-1 rounded-lg bg-result-bg text-result-text">
+                      {fromC}
+                    </span>
+                  ) : (
+                    <span className="inline-block px-3 py-1 rounded-lg border-2 border-dashed border-result-bg text-result-bg">
+                      ___
+                    </span>
+                  )}
+                  <span className="text-text">og ég tala</span>
+                  {selectedLanguage || (languages.length === 1 && languages[0]) ? (
+                    <span className="inline-block px-3 py-1 rounded-lg bg-result-bg text-result-text">
+                      {selectedLanguage || languages[0]}
+                    </span>
+                  ) : (
+                    <span className="inline-block px-3 py-1 rounded-lg border-2 border-dashed border-result-bg text-result-bg">
+                      ___
+                    </span>
+                  )}
+                </div>
+              </div>
             </>
           )}
         </div>
