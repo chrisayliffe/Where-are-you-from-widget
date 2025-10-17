@@ -64,17 +64,17 @@ export const parseLanguages = (languageString) => {
 export const processCSVData = (csvText) => {
   const rows = parseCSV(csvText);
   
-  // Skip header row if it exists (check if first row looks like headers)
-  const startIndex = rows[0] && rows[0][0]?.toLowerCase().includes('country') ? 1 : 0;
+  // Skip header row (first row is always headers in this sheet)
+  const startIndex = 1;
   
   const data = [];
   
   for (let i = startIndex; i < rows.length; i++) {
     const row = rows[i];
     
-    // Column A (index 0) = country
-    // Column C (index 2) = fromC text
-    // Column E (index 4) = languages
+    // Column A (index 0) = country in English
+    // Column C (index 2) = fromC text (Icelandic location)
+    // Column E (index 4) = languages (Icelandic)
     const country = (row[0] || '').trim();
     const fromC = (row[2] || '').trim();
     const languagesRaw = (row[4] || '').trim();
