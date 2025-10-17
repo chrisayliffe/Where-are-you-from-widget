@@ -214,11 +214,8 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Language Selector Widget - Initial Load and Data Fetching"
-    - "Language Selector Widget - Mobile Responsiveness"
-  stuck_tasks:
-    - "Language Selector Widget - Initial Load and Data Fetching"
-    - "Language Selector Widget - Mobile Responsiveness"
+    - "Language Selector Widget - Multiple Languages Support"
+  stuck_tasks: []
   test_all: false
   test_priority: "high_first"
 
