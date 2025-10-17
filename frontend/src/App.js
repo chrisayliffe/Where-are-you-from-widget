@@ -140,9 +140,14 @@ function App() {
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-text mb-2">
             Hvaðan ertu?
           </h1>
-          <p className="text-gray-600 text-sm sm:text-base px-4">
-            Choose your country to learn it's name in Icelandic (you'll get asked this a lot). You'll get your language as a bonus!
-          </p>
+          <div className="text-gray-600 text-sm sm:text-base px-4">
+            <p className="mb-1">
+              Choose your country to learn it's name in Icelandic (you'll get asked this a lot).
+            </p>
+            <p>
+              You'll get your language as a bonus!
+            </p>
+          </div>
         </div>
 
         {/* Main Widget */}
