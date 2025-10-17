@@ -1,37 +1,64 @@
 /**
  * Parse CSV text into rows
+ * Handles quoted fields with newlines properly
  * @param {string} csvText - Raw CSV text
  * @returns {Array<Array<string>>} - Array of rows, each row is an array of values
  */
 export const parseCSV = (csvText) => {
-  const lines = csvText.split('\n').filter(line => line.trim());
+  const lines = csvText.split('\n');
   const rows = [];
+  let currentRow = [];
+  let currentField = '';
+  let inQuotes = false;
+  let currentLine = '';
 
-  for (let line of lines) {
-    const row = [];
-    let current = '';
-    let inQuotes = false;
+  for (let lineIndex = 0; lineIndex < lines.length; lineIndex++) {
+    const line = lines[lineIndex];
+    
+    // If we're continuing a quoted field from previous line, add newline
+    if (inQuotes && currentLine.length > 0) {
+      currentLine += '\n' + line;
+    } else {
+      currentLine = line;
+    }
 
-    for (let i = 0; i < line.length; i++) {
-      const char = line[i];
-      const nextChar = line[i + 1];
+    for (let i = 0; i < currentLine.length; i++) {
+      const char = currentLine[i];
+      const nextChar = currentLine[i + 1];
 
       if (char === '"') {
         if (inQuotes && nextChar === '"') {
-          current += '"';
+          currentField += '"';
           i++; // Skip next quote
         } else {
           inQuotes = !inQuotes;
         }
       } else if (char === ',' && !inQuotes) {
-        row.push(current.trim());
-        current = '';
+        currentRow.push(currentField.trim());
+        currentField = '';
       } else {
-        current += char;
+        currentField += char;
       }
     }
-    row.push(current.trim());
-    rows.push(row);
+
+    // If we're not in quotes, this line is complete
+    if (!inQuotes) {
+      currentRow.push(currentField.trim());
+      if (currentRow.some(cell => cell.length > 0)) {
+        rows.push(currentRow);
+      }
+      currentRow = [];
+      currentField = '';
+      currentLine = '';
+    }
+  }
+
+  // Handle last row if exists
+  if (currentRow.length > 0 || currentField.length > 0) {
+    currentRow.push(currentField.trim());
+    if (currentRow.some(cell => cell.length > 0)) {
+      rows.push(currentRow);
+    }
   }
 
   return rows;
