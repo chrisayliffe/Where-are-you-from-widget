@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { SearchableDropdown } from './components/SearchableDropdown';
-import { ResultCard } from './components/ResultCard';
+import { InlineLanguageSelector } from './components/InlineLanguageSelector';
 import { ErrorState } from './components/ErrorState';
 import { LoadingState } from './components/LoadingState';
 import { processCSVData } from './utils/csvParser';
