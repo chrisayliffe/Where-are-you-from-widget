@@ -100,8 +100,8 @@ function App() {
       setFromC(rowData.fromC);
       setLanguages(rowData.languages);
       
-      // Auto-select if only one language
-      if (rowData.languages.length === 1) {
+      // Auto-select first language (always default to first)
+      if (rowData.languages.length > 0) {
         setSelectedLanguage(rowData.languages[0]);
       } else {
         setSelectedLanguage('');
