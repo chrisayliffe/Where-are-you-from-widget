@@ -123,7 +123,7 @@ function App() {
     const language = selectedLanguage || (languages.length === 1 ? languages[0] : '');
     
     if (language) {
-      return `Ég er frá ${fromC}, og ég tala ${language}`;
+      return `Ég er frá ${fromC} og ég tala ${language}`;
     }
     
     return `Ég er frá ${fromC}`;
