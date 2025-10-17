@@ -25,17 +25,22 @@ function App() {
     setError(null);
 
     try {
-      const response = await fetch(GOOGLE_SHEET_CSV_URL);
+      const response = await fetch(GOOGLE_SHEET_CSV_URL, {
+        mode: 'cors',
+        headers: {
+          'Accept': 'text/csv,text/plain,*/*',
+        },
+      });
       
       if (!response.ok) {
-        throw new Error('Failed to fetch data. Please check the sheet sharing settings.');
+        throw new Error('Failed to fetch data. Please ensure the Google Sheet is publicly accessible (Anyone with the link can view).');
       }
 
       const csvText = await response.text();
       const processedData = processCSVData(csvText);
 
       if (processedData.length === 0) {
-        throw new Error('No valid data found in the sheet.');
+        throw new Error('No valid data found in the sheet. Please check the CSV format.');
       }
 
       setData(processedData);
@@ -46,7 +51,14 @@ function App() {
       
     } catch (err) {
       console.error('Error fetching data:', err);
-      setError(err.message);
+      let errorMessage = err.message;
+      
+      // Provide more specific error messages
+      if (err.name === 'TypeError' && err.message.includes('fetch')) {
+        errorMessage = 'Unable to connect to Google Sheets. Please ensure the sheet is publicly accessible and CORS is enabled.';
+      }
+      
+      setError(errorMessage);
     } finally {
       setLoading(false);
     }
