@@ -65,23 +65,24 @@ export const SearchableDropdown = ({
         className={`
           w-full px-4 py-3.5 rounded-widget
           bg-accent text-accent-text
-          font-medium text-left
+          font-medium text-left text-base
           flex items-center justify-between
           transition-all duration-300
           shadow-widget-sm
-          hover:shadow-widget-md
+          hover:shadow-widget-md active:shadow-widget-md
           focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2
           disabled:opacity-50 disabled:cursor-not-allowed
+          min-h-[56px] touch-manipulation
           ${isOpen ? 'shadow-widget-md' : ''}
         `}
         aria-haspopup="listbox"
         aria-expanded={isOpen}
       >
-        <span className="truncate">
+        <span className="truncate text-left block">
           {value || placeholder}
         </span>
         <ChevronDown
-          className={`ml-2 h-5 w-5 transition-transform duration-300 ${
+          className={`ml-2 h-5 w-5 flex-shrink-0 transition-transform duration-300 ${
             isOpen ? 'rotate-180' : ''
           }`}
         />
