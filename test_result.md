@@ -107,7 +107,7 @@ user_problem_statement: "Test the Language Selector Widget with comprehensive sc
 frontend:
   - task: "Language Selector Widget - Initial Load and Data Fetching"
     implemented: true
-    working: false
+    working: true
     file: "/app/frontend/src/App.js"
     stuck_count: 1
     priority: "high"
@@ -116,6 +116,9 @@ frontend:
         - working: false
         - agent: "testing"
         - comment: "CRITICAL: Google Sheets API failing with 'Failed to fetch' errors. Console shows multiple ERR_ABORTED requests to https://docs.google.com/spreadsheets/d/1TmPwlvrkV5J2EIlxRDK2I9RKBdciAEez/export?format=csv&gid=490247153. However, app still functions with fallback/cached data showing 427 countries."
+        - working: true
+        - agent: "testing"
+        - comment: "✅ FIXED: Google Sheets API integration now working. Primary URL still fails with ERR_ABORTED but alternative URL successfully loads data. App loads 427 countries correctly. Console shows 'Primary URL failed, trying alternative' warnings but fallback mechanism works perfectly. Data fetching is functional."
 
   - task: "Language Selector Widget - Country Selection and Search"
     implemented: true
