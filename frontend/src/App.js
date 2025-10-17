@@ -163,13 +163,14 @@ function App() {
 
               {/* Language Selector - Only show if multiple languages */}
               {selectedCountry && languages.length > 1 && (
-                <SearchableDropdown
-                  label="Select your language"
-                  options={languages}
-                  value={selectedLanguage}
-                  onChange={handleLanguageSelect}
-                  placeholder="Choose a language"
-                />
+                <div className="relative">
+                  <SearchableDropdown
+                    options={languages}
+                    value={selectedLanguage}
+                    onChange={handleLanguageSelect}
+                    placeholder="Choose a language"
+                  />
+                </div>
               )}
 
               {/* Missing data warning */}
@@ -181,7 +182,7 @@ function App() {
 
               {/* Always visible sentence with inline green boxes */}
               <div className="p-4 sm:p-6 rounded-lg bg-white border border-gray-200">
-                <div className="flex flex-wrap items-center gap-2 text-xl sm:text-2xl font-medium leading-relaxed">
+                <div className="flex flex-wrap items-center gap-2 text-base font-normal leading-relaxed">
                   <span className="text-text">Ég er frá</span>
                   {fromC ? (
                     <span className="inline-block px-3 py-1 rounded-lg bg-result-bg text-result-text">
@@ -193,7 +194,27 @@ function App() {
                     </span>
                   )}
                   <span className="text-text">og ég tala</span>
-                  {selectedLanguage || (languages.length === 1 && languages[0]) ? (
+                  
+                  {/* Language display with dropdown if multiple options */}
+                  {languages.length > 1 ? (
+                    <div className="relative inline-block">
+                      <button
+                        onClick={() => {
+                          // Find and click the hidden language dropdown
+                          const languageDropdown = document.querySelector('[aria-label="language-selector"]');
+                          if (languageDropdown) {
+                            languageDropdown.click();
+                          }
+                        }}
+                        className="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-result-bg text-result-text hover:bg-opacity-90 transition-colors"
+                      >
+                        <span>{selectedLanguage || languages[0]}</span>
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </button>
+                    </div>
+                  ) : (selectedLanguage || (languages.length === 1 && languages[0])) ? (
                     <span className="inline-block px-3 py-1 rounded-lg bg-result-bg text-result-text">
                       {selectedLanguage || languages[0]}
                     </span>
