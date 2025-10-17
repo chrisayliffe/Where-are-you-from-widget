@@ -7,11 +7,11 @@ import { processCSVData } from './utils/csvParser';
 import { Globe } from 'lucide-react';
 
 const GOOGLE_SHEET_CSV_URL =
-  'https://docs.google.com/spreadsheets/d/1TmPwlvrkV5J2EIlxRDK2I9RKBdciAEez/export?format=csv&gid=490247153';
+  'https://docs.google.com/spreadsheets/d/1ZrCA7lFcw_WV5YcgNu-slDarG5IbQCDHw30fmW1vpco/export?format=csv&gid=0';
 
 // Alternative: Direct CSV URL if export doesn't work
 const GOOGLE_SHEET_ALTERNATIVE_URL =
-  'https://docs.google.com/spreadsheets/d/1TmPwlvrkV5J2EIlxRDK2I9RKBdciAEez/gviz/tq?tqx=out:csv&gid=490247153';
+  'https://docs.google.com/spreadsheets/d/1ZrCA7lFcw_WV5YcgNu-slDarG5IbQCDHw30fmW1vpco/gviz/tq?tqx=out:csv&gid=0';
 
 function App() {
   const [loading, setLoading] = useState(true);
