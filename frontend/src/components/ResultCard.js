@@ -8,7 +8,7 @@ export const ResultCard = ({ sentence, fromC, selectedLanguage }) => {
   return (
     <div
       className="
-        p-6 rounded-widget
+        p-4 sm:p-6 rounded-widget
         bg-result-bg text-result-text
         shadow-widget-md
         transition-all duration-500
@@ -17,12 +17,12 @@ export const ResultCard = ({ sentence, fromC, selectedLanguage }) => {
       role="status"
       aria-live="polite"
     >
-      <p className="text-2xl md:text-3xl font-semibold leading-relaxed">
+      <p className="text-xl sm:text-2xl md:text-3xl font-semibold leading-relaxed">
         {sentence}
       </p>
       
       {!selectedLanguage && (
-        <p className="text-sm mt-3 opacity-90">
+        <p className="text-xs sm:text-sm mt-2 sm:mt-3 opacity-90">
           Select a language to complete the sentence
         </p>
       )}
