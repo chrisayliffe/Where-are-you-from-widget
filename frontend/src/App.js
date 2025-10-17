@@ -191,13 +191,6 @@ function App() {
             </>
           )}
         </div>
-
-        {/* Footer */}
-        {!loading && !error && (
-          <div className="mt-6 sm:mt-8 text-center text-xs text-gray-500">
-            Widget powered by Google Sheets
-          </div>
-        )}
       </div>
     </div>
   );
