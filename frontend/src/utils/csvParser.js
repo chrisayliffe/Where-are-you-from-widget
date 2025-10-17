@@ -65,14 +65,15 @@ export const parseCSV = (csvText) => {
 
 /**
  * Parse languages from Column E
- * Splits on common separators: , ; / |
+ * Splits on common separators: , ; / | and newlines
  * @param {string} languageString - Raw language string from CSV
  * @returns {Array<string>} - Array of unique languages
  */
 export const parseLanguages = (languageString) => {
   if (!languageString) return [];
   
-  const separators = /[,;\/|]/;
+  // Split on commas, semicolons, slashes, pipes, AND newlines
+  const separators = /[,;\/|\n]/;
   const languages = languageString
     .split(separators)
     .map(lang => lang.trim())
