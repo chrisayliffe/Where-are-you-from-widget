@@ -1,60 +1,59 @@
 /**
  * Parse CSV text into rows
- * Handles quoted fields with newlines properly
+ * Properly handles quoted fields with newlines
  * @param {string} csvText - Raw CSV text
  * @returns {Array<Array<string>>} - Array of rows, each row is an array of values
  */
 export const parseCSV = (csvText) => {
-  const lines = csvText.split('\n');
   const rows = [];
   let currentRow = [];
   let currentField = '';
   let inQuotes = false;
-  let currentLine = '';
 
-  for (let lineIndex = 0; lineIndex < lines.length; lineIndex++) {
-    const line = lines[lineIndex];
-    
-    // If we're continuing a quoted field from previous line, add newline
-    if (inQuotes && currentLine.length > 0) {
-      currentLine += '\n' + line;
-    } else {
-      currentLine = line;
-    }
+  for (let i = 0; i < csvText.length; i++) {
+    const char = csvText[i];
+    const nextChar = csvText[i + 1];
 
-    for (let i = 0; i < currentLine.length; i++) {
-      const char = currentLine[i];
-      const nextChar = currentLine[i + 1];
-
-      if (char === '"') {
-        if (inQuotes && nextChar === '"') {
-          currentField += '"';
-          i++; // Skip next quote
-        } else {
-          inQuotes = !inQuotes;
-        }
-      } else if (char === ',' && !inQuotes) {
-        currentRow.push(currentField.trim());
-        currentField = '';
+    if (char === '"') {
+      // Handle escaped quotes (two quotes in a row)
+      if (inQuotes && nextChar === '"') {
+        currentField += '"';
+        i++; // Skip the next quote
       } else {
-        currentField += char;
+        // Toggle quote mode
+        inQuotes = !inQuotes;
       }
-    }
-
-    // If we're not in quotes, this line is complete
-    if (!inQuotes) {
+    } else if (char === ',' && !inQuotes) {
+      // End of field
+      currentRow.push(currentField.trim());
+      currentField = '';
+    } else if (char === '\n' && !inQuotes) {
+      // End of row
       currentRow.push(currentField.trim());
       if (currentRow.some(cell => cell.length > 0)) {
         rows.push(currentRow);
       }
       currentRow = [];
       currentField = '';
-      currentLine = '';
+    } else if (char === '\r' && nextChar === '\n' && !inQuotes) {
+      // Windows line ending - skip \r, \n will be handled next iteration
+      continue;
+    } else if (char === '\r' && !inQuotes) {
+      // Mac line ending
+      currentRow.push(currentField.trim());
+      if (currentRow.some(cell => cell.length > 0)) {
+        rows.push(currentRow);
+      }
+      currentRow = [];
+      currentField = '';
+    } else {
+      // Regular character
+      currentField += char;
     }
   }
 
-  // Handle last row if exists
-  if (currentRow.length > 0 || currentField.length > 0) {
+  // Handle last field and row
+  if (currentField.length > 0 || currentRow.length > 0) {
     currentRow.push(currentField.trim());
     if (currentRow.some(cell => cell.length > 0)) {
       rows.push(currentRow);
