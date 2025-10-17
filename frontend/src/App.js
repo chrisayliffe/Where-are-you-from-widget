@@ -107,23 +107,23 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-background py-8 px-4 flex items-center justify-center">
+    <div className="min-h-screen bg-background py-4 sm:py-8 px-4 sm:px-6 flex items-center justify-center">
       <div className="w-full max-w-2xl">
         {/* Header */}
-        <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-accent/10 rounded-full mb-4">
-            <Globe className="h-8 w-8 text-accent" />
+        <div className="text-center mb-6 sm:mb-8">
+          <div className="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-accent/10 rounded-full mb-3 sm:mb-4">
+            <Globe className="h-7 w-7 sm:h-8 sm:w-8 text-accent" />
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold text-text mb-2">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-text mb-2">
             Language Selector
           </h1>
-          <p className="text-gray-600 text-sm md:text-base">
+          <p className="text-gray-600 text-sm sm:text-base px-4">
             Choose your country and language to create your introduction
           </p>
         </div>
 
         {/* Main Widget */}
-        <div className="space-y-5">
+        <div className="space-y-4 sm:space-y-5">
           {loading && <LoadingState />}
 
           {error && <ErrorState message={error} onRetry={fetchData} />}
@@ -152,7 +152,7 @@ function App() {
 
               {/* Missing data warning */}
               {selectedCountry && !fromC && (
-                <div className="p-4 bg-yellow-50 border border-yellow-200 rounded-widget text-sm text-yellow-800">
+                <div className="p-3 sm:p-4 bg-yellow-50 border border-yellow-200 rounded-widget text-sm text-yellow-800">
                   This entry is missing location data (Column C).
                 </div>
               )}
@@ -171,7 +171,7 @@ function App() {
 
         {/* Footer */}
         {!loading && !error && (
-          <div className="mt-8 text-center text-xs text-gray-500">
+          <div className="mt-6 sm:mt-8 text-center text-xs text-gray-500">
             Widget powered by Google Sheets
           </div>
         )}
