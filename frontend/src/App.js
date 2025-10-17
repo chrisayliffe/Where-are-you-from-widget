@@ -9,6 +9,10 @@ import { Globe } from 'lucide-react';
 const GOOGLE_SHEET_CSV_URL =
   'https://docs.google.com/spreadsheets/d/1TmPwlvrkV5J2EIlxRDK2I9RKBdciAEez/export?format=csv&gid=490247153';
 
+// Alternative: Direct CSV URL if export doesn't work
+const GOOGLE_SHEET_ALTERNATIVE_URL =
+  'https://docs.google.com/spreadsheets/d/1TmPwlvrkV5J2EIlxRDK2I9RKBdciAEez/gviz/tq?tqx=out:csv&gid=490247153';
+
 function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -25,22 +29,41 @@ function App() {
     setError(null);
 
     try {
-      const response = await fetch(GOOGLE_SHEET_CSV_URL, {
-        mode: 'cors',
-        headers: {
-          'Accept': 'text/csv,text/plain,*/*',
-        },
-      });
+      // Try primary URL first
+      let response;
+      let csvText;
       
-      if (!response.ok) {
-        throw new Error('Failed to fetch data. Please ensure the Google Sheet is publicly accessible (Anyone with the link can view).');
+      try {
+        response = await fetch(GOOGLE_SHEET_CSV_URL, {
+          method: 'GET',
+          mode: 'cors',
+        });
+        
+        if (!response.ok) {
+          throw new Error('Primary URL failed');
+        }
+        
+        csvText = await response.text();
+      } catch (primaryError) {
+        console.warn('Primary URL failed, trying alternative:', primaryError);
+        
+        // Try alternative URL
+        response = await fetch(GOOGLE_SHEET_ALTERNATIVE_URL, {
+          method: 'GET',
+          mode: 'cors',
+        });
+        
+        if (!response.ok) {
+          throw new Error('Failed to fetch data from Google Sheets. Please ensure the sheet is publicly accessible (Anyone with the link can view).');
+        }
+        
+        csvText = await response.text();
       }
 
-      const csvText = await response.text();
       const processedData = processCSVData(csvText);
 
       if (processedData.length === 0) {
-        throw new Error('No valid data found in the sheet. Please check the CSV format.');
+        throw new Error('No valid data found in the sheet. Please check the CSV format and ensure data exists in columns A, C, and E.');
       }
 
       setData(processedData);
@@ -54,8 +77,8 @@ function App() {
       let errorMessage = err.message;
       
       // Provide more specific error messages
-      if (err.name === 'TypeError' && err.message.includes('fetch')) {
-        errorMessage = 'Unable to connect to Google Sheets. Please ensure the sheet is publicly accessible and CORS is enabled.';
+      if (err.name === 'TypeError' && (err.message.includes('fetch') || err.message.includes('NetworkError'))) {
+        errorMessage = 'Unable to connect to Google Sheets. Please ensure:\n\n• The sheet is publicly accessible (Share > Anyone with the link can view)\n• Your internet connection is stable\n• CORS is not being blocked by your browser';
       }
       
       setError(errorMessage);
