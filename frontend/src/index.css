@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/Where-are-you-from-widget/static/fonts/outfit-400.woff2') format('woff2');
+  src: url('../static/fonts/outfit-400.woff2') format('woff2');
 }
 
 @font-face {
@@ -12,7 +12,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('/Where-are-you-from-widget/static/fonts/outfit-500.woff2') format('woff2');
+  src: url('../static/fonts/outfit-500.woff2') format('woff2');
 }
 
 @font-face {
@@ -20,7 +20,7 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('/Where-are-you-from-widget/static/fonts/outfit-600.woff2') format('woff2');
+  src: url('../static/fonts/outfit-600.woff2') format('woff2');
 }
 
 @font-face {
@@ -28,7 +28,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/Where-are-you-from-widget/static/fonts/outfit-700.woff2') format('woff2');
+  src: url('../static/fonts/outfit-700.woff2') format('woff2');
 }
 
 @tailwind base;
