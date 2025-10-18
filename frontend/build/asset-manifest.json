@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Where-are-you-from-widget/static/css/main.c50a2d67.css",
+    "main.js": "/Where-are-you-from-widget/static/js/main.31f133c1.js",
+    "index.html": "/Where-are-you-from-widget/index.html",
+    "main.c50a2d67.css.map": "/Where-are-you-from-widget/static/css/main.c50a2d67.css.map",
+    "main.31f133c1.js.map": "/Where-are-you-from-widget/static/js/main.31f133c1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c50a2d67.css",
+    "static/js/main.31f133c1.js"
+  ]
+}
