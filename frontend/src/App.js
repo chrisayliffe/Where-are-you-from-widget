@@ -3,14 +3,7 @@ import { SearchableDropdown } from './components/SearchableDropdown';
 import { InlineLanguageSelector } from './components/InlineLanguageSelector';
 import { ErrorState } from './components/ErrorState';
 import { LoadingState } from './components/LoadingState';
-import { processCSVData } from './utils/csvParser';
 import { Globe } from 'lucide-react';
-
-const GOOGLE_SHEET_CSV_URL =
-  'https://docs.google.com/spreadsheets/d/1ZrCA7lFcw_WV5YcgNu-slDarG5IbQCDHw30fmW1vpco/export?format=csv&gid=0';
-
-const GOOGLE_SHEET_ALTERNATIVE_URL =
-  'https://docs.google.com/spreadsheets/d/1ZrCA7lFcw_WV5YcgNu-slDarG5IbQCDHw30fmW1vpco/gviz/tq?tqx=out:csv&gid=0';
 
 function App() {
   const [loading, setLoading] = useState(true);
