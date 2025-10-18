@@ -21,8 +21,8 @@ function App() {
     setError(null);
 
     try {
-      // Load from local JSON file
-      const response = await fetch('/Where-are-you-from-widget/static/data/countries.json');
+      // Load from local JSON file (relative path works with base tag)
+      const response = await fetch('./static/data/countries.json');
       
       if (!response.ok) {
         throw new Error('Failed to load country data. Please refresh the page.');
