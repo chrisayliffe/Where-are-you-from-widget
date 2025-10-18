@@ -3,15 +3,7 @@ import { SearchableDropdown } from './components/SearchableDropdown';
 import { InlineLanguageSelector } from './components/InlineLanguageSelector';
 import { ErrorState } from './components/ErrorState';
 import { LoadingState } from './components/LoadingState';
-import { processCSVData } from './utils/csvParser';
 import { Globe } from 'lucide-react';
-
-const GOOGLE_SHEET_CSV_URL =
-  'https://docs.google.com/spreadsheets/d/1ZrCA7lFcw_WV5YcgNu-slDarG5IbQCDHw30fmW1vpco/export?format=csv&gid=0';
-
-// Alternative: Direct CSV URL if export doesn't work
-const GOOGLE_SHEET_ALTERNATIVE_URL =
-  'https://docs.google.com/spreadsheets/d/1ZrCA7lFcw_WV5YcgNu-slDarG5IbQCDHw30fmW1vpco/gviz/tq?tqx=out:csv&gid=0';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -29,59 +21,28 @@ function App() {
     setError(null);
 
     try {
-      // Try primary URL first
-      let response;
-      let csvText;
+      // Load from local JSON file
+      const response = await fetch('/Where-are-you-from-widget/static/data/countries.json');
       
-      try {
-        response = await fetch(GOOGLE_SHEET_CSV_URL, {
-          method: 'GET',
-          mode: 'cors',
-        });
-        
-        if (!response.ok) {
-          throw new Error('Primary URL failed');
-        }
-        
-        csvText = await response.text();
-      } catch (primaryError) {
-        console.warn('Primary URL failed, trying alternative:', primaryError);
-        
-        // Try alternative URL
-        response = await fetch(GOOGLE_SHEET_ALTERNATIVE_URL, {
-          method: 'GET',
-          mode: 'cors',
-        });
-        
-        if (!response.ok) {
-          throw new Error('Failed to fetch data from Google Sheets. Please ensure the sheet is publicly accessible (Anyone with the link can view).');
-        }
-        
-        csvText = await response.text();
+      if (!response.ok) {
+        throw new Error('Failed to load country data. Please refresh the page.');
       }
 
-      const processedData = processCSVData(csvText);
+      const jsonData = await response.json();
 
-      if (processedData.length === 0) {
-        throw new Error('No valid data found in the sheet. Please check the CSV format and ensure data exists in columns A, C, and E.');
+      if (!jsonData || jsonData.length === 0) {
+        throw new Error('No valid data found.');
       }
 
-      setData(processedData);
+      setData(jsonData);
       
       // Extract unique countries and sort alphabetically
-      const uniqueCountries = [...new Set(processedData.map(d => d.country))].sort();
+      const uniqueCountries = [...new Set(jsonData.map(d => d.country))].sort();
       setCountries(uniqueCountries);
       
     } catch (err) {
-      console.error('Error fetching data:', err);
-      let errorMessage = err.message;
-      
-      // Provide more specific error messages
-      if (err.name === 'TypeError' && (err.message.includes('fetch') || err.message.includes('NetworkError'))) {
-        errorMessage = 'Unable to connect to Google Sheets. Please ensure:\n\n• The sheet is publicly accessible (Share > Anyone with the link can view)\n• Your internet connection is stable\n• CORS is not being blocked by your browser';
-      }
-      
-      setError(errorMessage);
+      console.error('Error loading data:', err);
+      setError(err.message);
     } finally {
       setLoading(false);
     }
