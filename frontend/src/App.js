@@ -3,7 +3,14 @@ import { SearchableDropdown } from './components/SearchableDropdown';
 import { InlineLanguageSelector } from './components/InlineLanguageSelector';
 import { ErrorState } from './components/ErrorState';
 import { LoadingState } from './components/LoadingState';
+import { processCSVData } from './utils/csvParser';
 import { Globe } from 'lucide-react';
+
+const GOOGLE_SHEET_CSV_URL =
+  'https://docs.google.com/spreadsheets/d/1ZrCA7lFcw_WV5YcgNu-slDarG5IbQCDHw30fmW1vpco/export?format=csv&gid=0';
+
+const GOOGLE_SHEET_ALTERNATIVE_URL =
+  'https://docs.google.com/spreadsheets/d/1ZrCA7lFcw_WV5YcgNu-slDarG5IbQCDHw30fmW1vpco/gviz/tq?tqx=out:csv&gid=0';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -21,27 +28,48 @@ function App() {
     setError(null);
 
     try {
-      // Load from local JSON file (relative path works with base tag)
-      const response = await fetch('./static/data/countries.json');
+      let response;
+      let csvText;
       
-      if (!response.ok) {
-        throw new Error('Failed to load country data. Please refresh the page.');
+      try {
+        response = await fetch(GOOGLE_SHEET_CSV_URL, {
+          method: 'GET',
+          mode: 'cors',
+        });
+        
+        if (!response.ok) {
+          throw new Error('Primary URL failed');
+        }
+        
+        csvText = await response.text();
+      } catch (primaryError) {
+        console.warn('Primary URL failed, trying alternative:', primaryError);
+        
+        response = await fetch(GOOGLE_SHEET_ALTERNATIVE_URL, {
+          method: 'GET',
+          mode: 'cors',
+        });
+        
+        if (!response.ok) {
+          throw new Error('Failed to fetch data from Google Sheets.');
+        }
+        
+        csvText = await response.text();
       }
 
-      const jsonData = await response.json();
+      const processedData = processCSVData(csvText);
 
-      if (!jsonData || jsonData.length === 0) {
+      if (processedData.length === 0) {
         throw new Error('No valid data found.');
       }
 
-      setData(jsonData);
+      setData(processedData);
       
-      // Extract unique countries and sort alphabetically
-      const uniqueCountries = [...new Set(jsonData.map(d => d.country))].sort();
+      const uniqueCountries = [...new Set(processedData.map(d => d.country))].sort();
       setCountries(uniqueCountries);
       
     } catch (err) {
-      console.error('Error loading data:', err);
+      console.error('Error fetching data:', err);
       setError(err.message);
     } finally {
       setLoading(false);
