@@ -28,49 +28,28 @@ function App() {
     setError(null);
 
     try {
-      let response;
-      let csvText;
+      // Load from local JSON file in public folder
+      // Using process.env.PUBLIC_URL for correct path resolution
+      const response = await fetch(process.env.PUBLIC_URL + '/static/data/countries.json');
       
-      try {
-        response = await fetch(GOOGLE_SHEET_CSV_URL, {
-          method: 'GET',
-          mode: 'cors',
-        });
-        
-        if (!response.ok) {
-          throw new Error('Primary URL failed');
-        }
-        
-        csvText = await response.text();
-      } catch (primaryError) {
-        console.warn('Primary URL failed, trying alternative:', primaryError);
-        
-        response = await fetch(GOOGLE_SHEET_ALTERNATIVE_URL, {
-          method: 'GET',
-          mode: 'cors',
-        });
-        
-        if (!response.ok) {
-          throw new Error('Failed to fetch data from Google Sheets.');
-        }
-        
-        csvText = await response.text();
+      if (!response.ok) {
+        throw new Error('Failed to load country data. Please refresh the page.');
       }
 
-      const processedData = processCSVData(csvText);
+      const jsonData = await response.json();
 
-      if (processedData.length === 0) {
+      if (!jsonData || jsonData.length === 0) {
         throw new Error('No valid data found.');
       }
 
-      setData(processedData);
+      setData(jsonData);
       
-      const uniqueCountries = [...new Set(processedData.map(d => d.country))].sort();
+      const uniqueCountries = [...new Set(jsonData.map(d => d.country))].sort();
       setCountries(uniqueCountries);
       
     } catch (err) {
-      console.error('Error fetching data:', err);
-      setError(err.message);
+      console.error('Error loading data:', err);
+      setError(err.message || 'Failed to load data');
     } finally {
       setLoading(false);
     }
