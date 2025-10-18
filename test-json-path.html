@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test JSON Load</title>
+    <base href="/Where-are-you-from-widget/">
+</head>
+<body>
+    <h1>Testing JSON Path</h1>
+    <div id="result"></div>
+    <script>
+        async function test() {
+            try {
+                const response = await fetch('./static/data/countries.json');
+                if (!response.ok) throw new Error('Failed to load');
+                const data = await response.json();
+                document.getElementById('result').innerHTML = 
+                    `✅ SUCCESS: Loaded ${data.length} countries<br>` +
+                    `First country: ${data[0].country}`;
+            } catch (err) {
+                document.getElementById('result').innerHTML = 
+                    `❌ ERROR: ${err.message}`;
+            }
+        }
+        test();
+    </script>
+</body>
+</html>
