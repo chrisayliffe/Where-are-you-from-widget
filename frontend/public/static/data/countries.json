@@ -1,0 +1,1548 @@
+[
+  {
+    "country": "Afghani­stan",
+    "fromC": "Afganistan",
+    "languages": [
+      "pastó persnesku"
+    ]
+  },
+  {
+    "country": "Albania",
+    "fromC": "Albaníu",
+    "languages": [
+      "albönsku"
+    ]
+  },
+  {
+    "country": "Algeria",
+    "fromC": "Alsír",
+    "languages": [
+      "arabísku"
+    ]
+  },
+  {
+    "country": "Andorra",
+    "fromC": "Andorra",
+    "languages": [
+      "katalónsku"
+    ]
+  },
+  {
+    "country": "Angola",
+    "fromC": "Angóla",
+    "languages": [
+      "portúgölsku"
+    ]
+  },
+  {
+    "country": "Antigua and Barbuda",
+    "fromC": "Antígva og Barbúda",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Argentina",
+    "fromC": "Argentínu",
+    "languages": [
+      "spænsku"
+    ]
+  },
+  {
+    "country": "Armenia",
+    "fromC": "Armeníu",
+    "languages": [
+      "armensku"
+    ]
+  },
+  {
+    "country": "Azerbaijan",
+    "fromC": "Aserbaísjan",
+    "languages": [
+      "asersku"
+    ]
+  },
+  {
+    "country": "Austria",
+    "fromC": "Austurríki",
+    "languages": [
+      "þýsku"
+    ]
+  },
+  {
+    "country": "Australia",
+    "fromC": "Ástralíu",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Bahamas (the)",
+    "fromC": "Bahamaeyjum",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "United States of America (the)",
+    "fromC": "Bandaríkjunum",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Bangla­desh",
+    "fromC": "Bangladess",
+    "languages": [
+      "beng­ölsku"
+    ]
+  },
+  {
+    "country": "Barbados",
+    "fromC": "Barbados",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Bahrain",
+    "fromC": "Barein",
+    "languages": [
+      "arabísku"
+    ]
+  },
+  {
+    "country": "Belarus",
+    "fromC": "Hvíta-Rússlandi",
+    "languages": [
+      "hvítrúss­nesku",
+      "rúss­nesku"
+    ]
+  },
+  {
+    "country": "Belgium",
+    "fromC": "Belgíu",
+    "languages": [
+      "frönsku",
+      "hollensku",
+      "flæmsku",
+      "þýsku"
+    ]
+  },
+  {
+    "country": "Belize",
+    "fromC": "Belís",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Benin",
+    "fromC": "Benín",
+    "languages": [
+      "frönsku"
+    ]
+  },
+  {
+    "country": "Bosnia and Herze­govina",
+    "fromC": "Bosníu og Hersegóvínu",
+    "languages": [
+      "bosnísku",
+      "króatísku",
+      "serbnesku"
+    ]
+  },
+  {
+    "country": "Botswana",
+    "fromC": "Botsvana",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Bolivia (Pluri­national State of)",
+    "fromC": "Bólivíu",
+    "languages": [
+      "spænsku"
+    ]
+  },
+  {
+    "country": "Brazil",
+    "fromC": "Brasilíu",
+    "languages": [
+      "port­úgölsku"
+    ]
+  },
+  {
+    "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+    "fromC": "Bretlandi",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Brunei Darus­salam",
+    "fromC": "Brúnei",
+    "languages": [
+      "ensku",
+      "malajísku"
+    ]
+  },
+  {
+    "country": "Bulgaria",
+    "fromC": "Búlgaríu",
+    "languages": [
+      "búlg­örsku"
+    ]
+  },
+  {
+    "country": "Burkina Faso",
+    "fromC": "Búrkína Fasó",
+    "languages": [
+      "frönsku"
+    ]
+  },
+  {
+    "country": "Burundi",
+    "fromC": "Búrúndí",
+    "languages": [
+      "búr­úndísku",
+      "frönsku"
+    ]
+  },
+  {
+    "country": "Bhutan",
+    "fromC": "Bútan",
+    "languages": [
+      "bútansku"
+    ]
+  },
+  {
+    "country": "Cabo Verde",
+    "fromC": "Grænhöfðaeyjum / Cabo Verde",
+    "languages": [
+      "port­úgölsku"
+    ]
+  },
+  {
+    "country": "Chad",
+    "fromC": "Tjad",
+    "languages": [
+      "arabísku",
+      "frönsku"
+    ]
+  },
+  {
+    "country": "Chile",
+    "fromC": "Síle / Chile",
+    "languages": [
+      "spænsku"
+    ]
+  },
+  {
+    "country": "Costa Rica",
+    "fromC": "Kosta Ríka / Kosta Ríku",
+    "languages": [
+      "spænsku"
+    ]
+  },
+  {
+    "country": "Colombia",
+    "fromC": "Kólumbíu",
+    "languages": [
+      "spænsku"
+    ]
+  },
+  {
+    "country": "Côte d‘Ivoire",
+    "fromC": "Fílabeinsströndinni",
+    "languages": [
+      "frönsku"
+    ]
+  },
+  {
+    "country": "Denmark",
+    "fromC": "Danmörku",
+    "languages": [
+      "dönsku"
+    ]
+  },
+  {
+    "country": "Djibouti",
+    "fromC": "Dijibútí",
+    "languages": [
+      "arabísku",
+      "frönsku"
+    ]
+  },
+  {
+    "country": "Dominica",
+    "fromC": "Dóminíku",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Dominican Republic (the)",
+    "fromC": "Dóminíska lýðveldinu",
+    "languages": [
+      "spænsku"
+    ]
+  },
+  {
+    "country": "Egypt",
+    "fromC": "Egyptalandi",
+    "languages": [
+      "arabísku"
+    ]
+  },
+  {
+    "country": "Estonia",
+    "fromC": "Eistlandi",
+    "languages": [
+      "eist­nesku"
+    ]
+  },
+  {
+    "country": "Ecuador",
+    "fromC": "Ekvador",
+    "languages": [
+      "spænsku"
+    ]
+  },
+  {
+    "country": "El Salvador",
+    "fromC": "El Salvador",
+    "languages": [
+      "spænsku"
+    ]
+  },
+  {
+    "country": "Eritrea",
+    "fromC": "Eritreu",
+    "languages": [
+      "arabísku",
+      "ensku",
+      "tígrinja"
+    ]
+  },
+  {
+    "country": "Eswatini",
+    "fromC": "Esvatini",
+    "languages": [
+      "ensku",
+      "svas­lensku"
+    ]
+  },
+  {
+    "country": "Ethiopia",
+    "fromC": "Eþíópíu",
+    "languages": [
+      "amhar­ísku"
+    ]
+  },
+  {
+    "country": "Fiji",
+    "fromC": "Fídjí",
+    "languages": [
+      "ensku",
+      "fídjísku"
+    ]
+  },
+  {
+    "country": "Philippines (the)",
+    "fromC": "Filippseyjum",
+    "languages": [
+      "ensku",
+      "tagalog"
+    ]
+  },
+  {
+    "country": "Finland",
+    "fromC": "Finnlandi",
+    "languages": [
+      "finnsku",
+      "sænsku"
+    ]
+  },
+  {
+    "country": "Côte d‘Ivoire",
+    "fromC": "Fílabeinsströndinni",
+    "languages": [
+      "frönsku"
+    ]
+  },
+  {
+    "country": "France",
+    "fromC": "Frakklandi",
+    "languages": [
+      "frönsku"
+    ]
+  },
+  {
+    "country": "Gabon",
+    "fromC": "Gabon",
+    "languages": [
+      "frönsku"
+    ]
+  },
+  {
+    "country": "Gambia (the)",
+    "fromC": "Gambíu",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Ghana",
+    "fromC": "Gana",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Georgia",
+    "fromC": "Georgíu",
+    "languages": [
+      "georg­ísku"
+    ]
+  },
+  {
+    "country": "Guinea",
+    "fromC": "Gíneu",
+    "languages": [
+      "frönsku"
+    ]
+  },
+  {
+    "country": "Guinea-Bissau",
+    "fromC": "Gíneu-Bissaú",
+    "languages": [
+      "port­úgölsku"
+    ]
+  },
+  {
+    "country": "Grenada",
+    "fromC": "Grenada",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Greece",
+    "fromC": "Grikklandi",
+    "languages": [
+      "grísku"
+    ]
+  },
+  {
+    "country": "Cabo Verde",
+    "fromC": "Grænhöfðaeyjum / Cabo Verde",
+    "languages": [
+      "port­úgölsku"
+    ]
+  },
+  {
+    "country": "Guatemala",
+    "fromC": "Gvatemala",
+    "languages": [
+      "spænsku"
+    ]
+  },
+  {
+    "country": "Guyana",
+    "fromC": "Gvæjana",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Haiti",
+    "fromC": "Haítí",
+    "languages": [
+      "frönsku",
+      "haítísku"
+    ]
+  },
+  {
+    "country": "Nether­lands (the)",
+    "fromC": "Hollandi / Niðurlandi",
+    "languages": [
+      "hol­lensku"
+    ]
+  },
+  {
+    "country": "Honduras",
+    "fromC": "Hondúras",
+    "languages": [
+      "spænsku"
+    ]
+  },
+  {
+    "country": "Belarus",
+    "fromC": "Hvíta-Rússlandi",
+    "languages": [
+      "hvít­rúss­nesku",
+      "rúss­nesku"
+    ]
+  },
+  {
+    "country": "India",
+    "fromC": "Indlandi",
+    "languages": [
+      "ensku",
+      "hindí"
+    ]
+  },
+  {
+    "country": "Indonesia",
+    "fromC": "Indónesíu",
+    "languages": [
+      "indónes­ísku"
+    ]
+  },
+  {
+    "country": "Iraq",
+    "fromC": "Írak",
+    "languages": [
+      "arabísku"
+    ]
+  },
+  {
+    "country": "Iran\n(Islamic Republic of)",
+    "fromC": "Íran",
+    "languages": [
+      "pers­nesku",
+      "vesturfarsí"
+    ]
+  },
+  {
+    "country": "Ireland",
+    "fromC": "Írlandi",
+    "languages": [
+      "ensku",
+      "írsku"
+    ]
+  },
+  {
+    "country": "Iceland",
+    "fromC": "Íslandi",
+    "languages": [
+      "íslensku"
+    ]
+  },
+  {
+    "country": "Israel",
+    "fromC": "Ísrael",
+    "languages": [
+      "arabísku",
+      "hebresku"
+    ]
+  },
+  {
+    "country": "Italy",
+    "fromC": "Ítalíu",
+    "languages": [
+      "ítölsku"
+    ]
+  },
+  {
+    "country": "Jamaica",
+    "fromC": "Jamaíka / Jamaíku",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Japan",
+    "fromC": "Japan",
+    "languages": [
+      "japansku"
+    ]
+  },
+  {
+    "country": "Yemen",
+    "fromC": "Jemen",
+    "languages": [
+      "arabísku"
+    ]
+  },
+  {
+    "country": "Jordan",
+    "fromC": "Jórdaníu",
+    "languages": [
+      "arabísku"
+    ]
+  },
+  {
+    "country": "Cambodia",
+    "fromC": "Kambódíu",
+    "languages": [
+      "kamb­ód­ísku"
+    ]
+  },
+  {
+    "country": "Cameroon",
+    "fromC": "Kamerún",
+    "languages": [
+      "ensku",
+      "frönsku"
+    ]
+  },
+  {
+    "country": "Canada",
+    "fromC": "Kanada",
+    "languages": [
+      "ensku",
+      "frönsku"
+    ]
+  },
+  {
+    "country": "Kazakh­stan",
+    "fromC": "Kasakstan",
+    "languages": [
+      "kasöksku",
+      "rúss­nesku"
+    ]
+  },
+  {
+    "country": "Qatar",
+    "fromC": "Katar",
+    "languages": [
+      "arabísku"
+    ]
+  },
+  {
+    "country": "Kenya",
+    "fromC": "Kenía / Keníu",
+    "languages": [
+      "ensku",
+      "svahílí"
+    ]
+  },
+  {
+    "country": "Kyrgyzstan",
+    "fromC": "Kirgistan",
+    "languages": [
+      "kirgisku",
+      "rúss­nesku"
+    ]
+  },
+  {
+    "country": "China",
+    "fromC": "Kína",
+    "languages": [
+      "kín­versku"
+    ]
+  },
+  {
+    "country": "Kiribati",
+    "fromC": "Kíribatí",
+    "languages": [
+      "ensku",
+      "kírib­atísku"
+    ]
+  },
+  {
+    "country": "Congo\n(the\nDemo­cratic\nRepublic\nof\nthe)",
+    "fromC": "Lýðstjórnarlýðveldinu Kongó",
+    "languages": [
+      "frönsku"
+    ]
+  },
+  {
+    "country": "Congo (the)",
+    "fromC": "Lýðveldinu Kongó",
+    "languages": [
+      "frönsku"
+    ]
+  },
+  {
+    "country": "Costa Rica",
+    "fromC": "Kosta Ríka / Kosta Ríku",
+    "languages": [
+      "spænsku"
+    ]
+  },
+  {
+    "country": "Colombia",
+    "fromC": "Kólumbíu",
+    "languages": [
+      "spænsku"
+    ]
+  },
+  {
+    "country": "Comoros\n(the)",
+    "fromC": "Kómorum",
+    "languages": [
+      "arabísku",
+      "frönsku"
+    ]
+  },
+  {
+    "country": "Korea (the Demo­cratic People‘s Republic of)",
+    "fromC": "Norður-Kóreu",
+    "languages": [
+      "kóresku"
+    ]
+  },
+  {
+    "country": "Korea (the Republic of)",
+    "fromC": "Suður-Kóreu",
+    "languages": [
+      "kóresku"
+    ]
+  },
+  {
+    "country": "Kosovo",
+    "fromC": "Kósovó",
+    "languages": [
+      "albönsku",
+      "serb­nesku"
+    ]
+  },
+  {
+    "country": "Croatia",
+    "fromC": "Króatíu",
+    "languages": [
+      "króatísku"
+    ]
+  },
+  {
+    "country": "Cuba",
+    "fromC": "Kúbu",
+    "languages": [
+      "spænsku"
+    ]
+  },
+  {
+    "country": "Kuwait",
+    "fromC": "Kúveit",
+    "languages": [
+      "arabísku"
+    ]
+  },
+  {
+    "country": "Cyprus",
+    "fromC": "Kýpur",
+    "languages": [
+      "grísku",
+      "tyrknesku"
+    ]
+  },
+  {
+    "country": "Lao People‘s Demo­cratic Republic (the)",
+    "fromC": "Laos",
+    "languages": [
+      "laosku"
+    ]
+  },
+  {
+    "country": "Lesotho",
+    "fromC": "Lesótó",
+    "languages": [
+      "ensku",
+      "suðursótó"
+    ]
+  },
+  {
+    "country": "Latvia",
+    "fromC": "Lettlandi",
+    "languages": [
+      "lettnesku"
+    ]
+  },
+  {
+    "country": "Liechten­stein",
+    "fromC": "Liechtenstein",
+    "languages": [
+      "þýsku"
+    ]
+  },
+  {
+    "country": "Lithuania",
+    "fromC": "Litáen",
+    "languages": [
+      "litáísku"
+    ]
+  },
+  {
+    "country": "Lebanon",
+    "fromC": "Líbanon",
+    "languages": [
+      "arabísku"
+    ]
+  },
+  {
+    "country": "Liberia",
+    "fromC": "Líberíu",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Libya",
+    "fromC": "Líbíu",
+    "languages": [
+      "arabísku"
+    ]
+  },
+  {
+    "country": "Luxem­bourg",
+    "fromC": "Lúxemborg",
+    "languages": [
+      "frönsku",
+      "lúxem­borgsku",
+      "þýsku"
+    ]
+  },
+  {
+    "country": "Madagas­car",
+    "fromC": "Madagaskar",
+    "languages": [
+      "ensku",
+      "frönsku",
+      "mal­agas­ísku"
+    ]
+  },
+  {
+    "country": "Mal­aysia",
+    "fromC": "Malasíu",
+    "languages": [
+      "mal­ajísku"
+    ]
+  },
+  {
+    "country": "Malawi",
+    "fromC": "Malaví",
+    "languages": [
+      "ensku",
+      "mal­avísku"
+    ]
+  },
+  {
+    "country": "Maldives",
+    "fromC": "Maldívum",
+    "languages": [
+      "mald­ívsku"
+    ]
+  },
+  {
+    "country": "Mali",
+    "fromC": "Malí",
+    "languages": [
+      "frönsku"
+    ]
+  },
+  {
+    "country": "Malta",
+    "fromC": "Möltu",
+    "languages": [
+      "ensku",
+      "malt­nesku"
+    ]
+  },
+  {
+    "country": "Morocco",
+    "fromC": "Marokkó",
+    "languages": [
+      "arabísku"
+    ]
+  },
+  {
+    "country": "Marshall\nIslands\n(the)",
+    "fromC": "Marshall-eyjum",
+    "languages": [
+      "ensku",
+      "marshall­eysku"
+    ]
+  },
+  {
+    "country": "Maurit­ania",
+    "fromC": "Máritaníu",
+    "languages": [
+      "arabísku"
+    ]
+  },
+  {
+    "country": "Mauritius",
+    "fromC": "Máritíus",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Mexico",
+    "fromC": "Mexíkó",
+    "languages": [
+      "spænsku"
+    ]
+  },
+  {
+    "country": "Central\nAfrican\nRepublic\n(the)",
+    "fromC": "Mið-Afríkulýðveldinu",
+    "languages": [
+      "frönsku",
+      "sangó"
+    ]
+  },
+  {
+    "country": "Equator­ial Guinea",
+    "fromC": "Miðbaugs-Gíneu",
+    "languages": [
+      "frönsku",
+      "port­úgölsku",
+      "spænsku"
+    ]
+  },
+  {
+    "country": "Micro­nesia\n(Federated\nStates\nof)",
+    "fromC": "Míkrónesíu",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Myanmar",
+    "fromC": "Mjanmar",
+    "languages": [
+      "búrm­nesku"
+    ]
+  },
+  {
+    "country": "Moldova\n(the\nRepublic\nof)",
+    "fromC": "Moldóvu",
+    "languages": [
+      "mold­óvsku"
+    ]
+  },
+  {
+    "country": "Mongolia",
+    "fromC": "Mongólíu",
+    "languages": [
+      "mong­ólsku"
+    ]
+  },
+  {
+    "country": "Monte­negro",
+    "fromC": "Svartfjallalandi",
+    "languages": [
+      "svart­fellsku"
+    ]
+  },
+  {
+    "country": "Monaco",
+    "fromC": "Mónakó",
+    "languages": [
+      "frönsku"
+    ]
+  },
+  {
+    "country": "Mozam­bique",
+    "fromC": "Mósambík",
+    "languages": [
+      "port­úgölsku"
+    ]
+  },
+  {
+    "country": "Namibia",
+    "fromC": "Namibíu",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Nauru",
+    "fromC": "Naúrú",
+    "languages": [
+      "ensku",
+      "naúrúsku"
+    ]
+  },
+  {
+    "country": "Nepal",
+    "fromC": "Nepal",
+    "languages": [
+      "nepölsku"
+    ]
+  },
+  {
+    "country": "Nicar­agua",
+    "fromC": "Níkaragva",
+    "languages": [
+      "spænsku"
+    ]
+  },
+  {
+    "country": "Nether­lands\n(the)",
+    "fromC": "Hollandi / Niðurlandi",
+    "languages": [
+      "hol­lensku"
+    ]
+  },
+  {
+    "country": "Niger (the)",
+    "fromC": "Níger",
+    "languages": [
+      "frönsku"
+    ]
+  },
+  {
+    "country": "Nigeria",
+    "fromC": "Nígeríu",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "North Mace­donia",
+    "fromC": "Norður-Makedóníu",
+    "languages": [
+      "make­dónsku"
+    ]
+  },
+  {
+    "country": "Norway",
+    "fromC": "Noregi",
+    "languages": [
+      "norsku"
+    ]
+  },
+  {
+    "country": "New Zealand",
+    "fromC": "Nýja-Sjálandi",
+    "languages": [
+      "ensku",
+      "maórísku"
+    ]
+  },
+  {
+    "country": "Oman",
+    "fromC": "Óman",
+    "languages": [
+      "arabísku"
+    ]
+  },
+  {
+    "country": "Pakistan",
+    "fromC": "Pakistan",
+    "languages": [
+      "ensku",
+      "úrdú"
+    ]
+  },
+  {
+    "country": "Palau",
+    "fromC": "Palaú",
+    "languages": [
+      "ensku",
+      "pal­aúsku"
+    ]
+  },
+  {
+    "country": "Palestine,\nState\nof",
+    "fromC": "Palestínu",
+    "languages": [
+      "arabísku"
+    ]
+  },
+  {
+    "country": "Panama",
+    "fromC": "Panama",
+    "languages": [
+      "spænsku"
+    ]
+  },
+  {
+    "country": "Papua New Guin­ea",
+    "fromC": "Papúa Nýja-Gíneu",
+    "languages": [
+      "ensku",
+      "hírímótú",
+      "tokpísín"
+    ]
+  },
+  {
+    "country": "Paraguay",
+    "fromC": "Paragvæ",
+    "languages": [
+      "gvar­an­ísku",
+      "spænsku"
+    ]
+  },
+  {
+    "country": "Vatican City State",
+    "fromC": "Vatíkaninu",
+    "languages": [
+      "ítölsku"
+    ]
+  },
+  {
+    "country": "Holy See (the)",
+    "fromC": "Páfastóli",
+    "languages": [
+      "ítölsku",
+      "latínu"
+    ]
+  },
+  {
+    "country": "Peru",
+    "fromC": "Perú",
+    "languages": [
+      "aímara",
+      "kets­úsku",
+      "spænsku"
+    ]
+  },
+  {
+    "country": "Portugal",
+    "fromC": "Portúgal",
+    "languages": [
+      "port­úgölsku"
+    ]
+  },
+  {
+    "country": "Poland",
+    "fromC": "Póllandi",
+    "languages": [
+      "pólsku"
+    ]
+  },
+  {
+    "country": "Rwanda",
+    "fromC": "Rúanda",
+    "languages": [
+      "ensku",
+      "frönsku",
+      "rúöndsku"
+    ]
+  },
+  {
+    "country": "Romania",
+    "fromC": "Rúmeníu",
+    "languages": [
+      "rúm­ensku"
+    ]
+  },
+  {
+    "country": "Russian\nFederation\n(the)",
+    "fromC": "Rússlandi",
+    "languages": [
+      "rúss­nesku"
+    ]
+  },
+  {
+    "country": "Solomon Islands",
+    "fromC": "Salómonseyjum",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Zambia",
+    "fromC": "Sambíu",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "United\nArab\nEmirates\n(the)",
+    "fromC": "Sameinuðu arabísku furstadæmunum",
+    "languages": [
+      "arab­ísku"
+    ]
+  },
+  {
+    "country": "Samoa",
+    "fromC": "Samóa",
+    "languages": [
+      "ensku",
+      "sam­ósku"
+    ]
+  },
+  {
+    "country": "San Marino",
+    "fromC": "San Marínó",
+    "languages": [
+      "ítölsku"
+    ]
+  },
+  {
+    "country": "Saint Kitts and Nevis",
+    "fromC": "Sankti Kitts og Nevis",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Saint Lucia",
+    "fromC": "Sankti Lúsíu",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Saint\nVincent\nand\nthe Grenad­ines",
+    "fromC": "Sankti Vinsent og Grenadínum",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Sao Tome and Principe",
+    "fromC": "Saó Tóme og Prinsípe",
+    "languages": [
+      "port­úgölsku"
+    ]
+  },
+  {
+    "country": "Saudi Arabia",
+    "fromC": "Sádi-Arabíu",
+    "languages": [
+      "arabísku"
+    ]
+  },
+  {
+    "country": "Senegal",
+    "fromC": "Senegal",
+    "languages": [
+      "frönsku"
+    ]
+  },
+  {
+    "country": "Serbia",
+    "fromC": "Serbíu",
+    "languages": [
+      "serb­nesku"
+    ]
+  },
+  {
+    "country": "Seych­elles",
+    "fromC": "Seychelles-eyjum",
+    "languages": [
+      "ensku",
+      "frönsku",
+      "seych­ell­es­eysku"
+    ]
+  },
+  {
+    "country": "Zimbabwe",
+    "fromC": "Simbabve",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Singa­pore",
+    "fromC": "Singapúr",
+    "languages": [
+      "ensku",
+      "kínversku",
+      "malajísku",
+      "tamíl"
+    ]
+  },
+  {
+    "country": "Sierra Leone",
+    "fromC": "Síerra Leóne",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Chile",
+    "fromC": "Síle / Chile",
+    "languages": [
+      "spænsku"
+    ]
+  },
+  {
+    "country": "Slovakia",
+    "fromC": "Slóvakíu",
+    "languages": [
+      "slóvak­ísku"
+    ]
+  },
+  {
+    "country": "Slovenia",
+    "fromC": "Slóveníu",
+    "languages": [
+      "slóvensku"
+    ]
+  },
+  {
+    "country": "Somalia",
+    "fromC": "Sómalíu",
+    "languages": [
+      "arabísku",
+      "sómal­ísku"
+    ]
+  },
+  {
+    "country": "Spain",
+    "fromC": "Spáni",
+    "languages": [
+      "spænsku"
+    ]
+  },
+  {
+    "country": "Sri Lanka",
+    "fromC": "Srí Lanka",
+    "languages": [
+      "ensku",
+      "singal­ísku",
+      "tamíl"
+    ]
+  },
+  {
+    "country": "South Africa",
+    "fromC": "Suður-Afríku",
+    "languages": [
+      "afríkönsku",
+      "botsvönsku",
+      "ensku",
+      "ndebele",
+      "norður­sótó",
+      "suður­sótó",
+      "súlúsku",
+      "svas­lensku",
+      "tsonga",
+      "venda",
+      "xhósa"
+    ]
+  },
+  {
+    "country": "South Sudan",
+    "fromC": "Suður-Súdan",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Sudan (the)",
+    "fromC": "Súdan",
+    "languages": [
+      "arabísku"
+    ]
+  },
+  {
+    "country": "Suriname",
+    "fromC": "Súrínam",
+    "languages": [
+      "hollensku"
+    ]
+  },
+  {
+    "country": "Monte­negro",
+    "fromC": "Svartfjallalandi",
+    "languages": [
+      "svart­fellsku"
+    ]
+  },
+  {
+    "country": "Switzer­land",
+    "fromC": "Sviss",
+    "languages": [
+      "frönsku",
+      "ítölsku",
+      "retó­róm­önsku",
+      "þýsku"
+    ]
+  },
+  {
+    "country": "Sweden",
+    "fromC": "Svíþjóð",
+    "languages": [
+      "sænsku"
+    ]
+  },
+  {
+    "country": "Syrian Arab Republic",
+    "fromC": "Sýrlandi",
+    "languages": [
+      "arabísku"
+    ]
+  },
+  {
+    "country": "Tajik­istan",
+    "fromC": "Tadsíkistan",
+    "languages": [
+      "tads­ísku"
+    ]
+  },
+  {
+    "country": "Thai­land",
+    "fromC": "Taílandi",
+    "languages": [
+      "taí­lensku"
+    ]
+  },
+  {
+    "country": "Tanzania,\nUnited \nRepublic\nof",
+    "fromC": "Tansaníu",
+    "languages": [
+      "ensku",
+      "svahílí"
+    ]
+  },
+  {
+    "country": "Czech\nRepublic\n(the)",
+    "fromC": "Tékklandi",
+    "languages": [
+      "tékk­nesku"
+    ]
+  },
+  {
+    "country": "Timor-Leste",
+    "fromC": "Tímor-Leste",
+    "languages": [
+      "port­úgölsku",
+      "tím­orsku"
+    ]
+  },
+  {
+    "country": "Chad",
+    "fromC": "Tjad",
+    "languages": [
+      "arabísku",
+      "frönsku"
+    ]
+  },
+  {
+    "country": "Tonga",
+    "fromC": "Tonga",
+    "languages": [
+      "ensku",
+      "tong­versku"
+    ]
+  },
+  {
+    "country": "Togo",
+    "fromC": "Tógó",
+    "languages": [
+      "frönsku"
+    ]
+  },
+  {
+    "country": "Trinidad and Tobago",
+    "fromC": "Trínidad og Tóbagó",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Tunisia",
+    "fromC": "Túnis",
+    "languages": [
+      "arabísku"
+    ]
+  },
+  {
+    "country": "Turk­meni­stan",
+    "fromC": "Túrkmenistan",
+    "languages": [
+      "túrk­mensku"
+    ]
+  },
+  {
+    "country": "Tuvalu",
+    "fromC": "Túvalú",
+    "languages": [
+      "ensku",
+      "túv­alúsku"
+    ]
+  },
+  {
+    "country": "Turkey",
+    "fromC": "Tyrklandi",
+    "languages": [
+      "tyrk­nesku"
+    ]
+  },
+  {
+    "country": "Hungary",
+    "fromC": "Ungverjalandi",
+    "languages": [
+      "ung­versku"
+    ]
+  },
+  {
+    "country": "Uganda",
+    "fromC": "Úganda",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Ukraine",
+    "fromC": "Úkraínu",
+    "languages": [
+      "úkraínsku"
+    ]
+  },
+  {
+    "country": "Uruguay",
+    "fromC": "Úrúgvæ",
+    "languages": [
+      "spænsku"
+    ]
+  },
+  {
+    "country": "Uzbeki­stan",
+    "fromC": "Úsbekistan",
+    "languages": [
+      "úsbeksku"
+    ]
+  },
+  {
+    "country": "Vanuatu",
+    "fromC": "Vanúatú",
+    "languages": [
+      "bíslama",
+      "ensku",
+      "frönsku"
+    ]
+  },
+  {
+    "country": "Vatican City State",
+    "fromC": "Vatíkaninu",
+    "languages": [
+      "ítölsku"
+    ]
+  },
+  {
+    "country": "Venezuela\n(Bolivarian\nRepublic\nof)",
+    "fromC": "Venesúela",
+    "languages": [
+      "spænsku"
+    ]
+  },
+  {
+    "country": "Viet Nam",
+    "fromC": "Víetnam",
+    "languages": [
+      "víet­nömsku"
+    ]
+  },
+  {
+    "country": "Zambia",
+    "fromC": "Sambíu",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Zimbabwe",
+    "fromC": "Simbabve",
+    "languages": [
+      "ensku"
+    ]
+  },
+  {
+    "country": "Germany",
+    "fromC": "Þýskalandi",
+    "languages": [
+      "þýsku"
+    ]
+  }
+]
