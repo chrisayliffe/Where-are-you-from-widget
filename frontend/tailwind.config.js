@@ -16,7 +16,7 @@ module.exports = {
         error: 'hsl(var(--error))',
       },
       fontFamily: {
-        outfit: ['Outfit', 'system-ui', 'sans-serif'],
+        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', 'sans-serif'],
       },
       borderRadius: {
         widget: 'var(--border-radius)',
